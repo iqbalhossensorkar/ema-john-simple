@@ -1,0 +1,7 @@
+.order-cart {
+    background: rgba(255, 153, 0, 0.3);
+    height: 944px;
+    padding: 24px;
+    position: sticky;
+    top: 0;
+}
