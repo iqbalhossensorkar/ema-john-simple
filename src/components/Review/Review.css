@@ -1,0 +1,14 @@
+.review-container {
+    max-width: 1024px;
+    margin: 180px auto;
+    display: flex;
+    align-items: center;
+    gap: 144px;
+}
+
+
+.cart-container img {
+    padding: 8px 8px 8px 8px ;
+    height: 91px;
+    width: 91px;
+}

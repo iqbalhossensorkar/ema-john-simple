@@ -4,8 +4,10 @@ import Order from '../Order/Order';
 import Product from '../Product/Product';
 import './Shop.css'
 
+
 const Shop = () => {
     const [products, setProducts] = useState([]);
+
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
@@ -20,7 +22,7 @@ const Shop = () => {
             product.quantity = 1;
             newCart = [...cart, product]
         }
-        else{
+        else {
             exists.quantity = exists.quantity + 1;
             const remaining = cart.filter(p => p.id !== product.id)
             newCart = [...remaining, exists]
@@ -31,7 +33,6 @@ const Shop = () => {
     useEffect(() => {
         const storedCart = getShoppingCart();
         const savedCart = [];
-        console.log(storedCart);
         for (const id in storedCart) {
             const addedProduct = products.find(product => product.id === id)
             if (addedProduct) {
