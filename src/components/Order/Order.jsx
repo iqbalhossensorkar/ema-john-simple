@@ -1,7 +1,7 @@
 import React from 'react';
 import './Order.css'
 
-const Order = ({ cart, handleClearCart }) => {
+const Order = ({ cart, handleClearCart, children }) => {
     let total = 0;
     let totalShipping = 0;
     let quantity = 0;
@@ -25,7 +25,7 @@ const Order = ({ cart, handleClearCart }) => {
             <p>Tax: ${tax.toFixed(2)}</p>
             <h3>Grand Total: ${grandTotal.toFixed(2)}</h3>
             <button onClick={handleClearCart} className='clear-b'>Clear Cart</button>
-            <button className='review-b'>Review Order</button>
+            {children}
         </div>
     );
 };

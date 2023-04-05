@@ -18,13 +18,6 @@
     color: white;
     
 }
-.review-b{
-    padding: 15px 10px 15px 10px;
-    border-radius: 8px;
-    border: none;
-    font-weight: 600;
-    transition: 300ms;
-}
 .review-b:hover{
     background-color: #f6ff00;
 }
